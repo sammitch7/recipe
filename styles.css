@@ -1,0 +1,313 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+/* Author: Samantha Mitchell */
+
+
+/*--------- CSS RESET -----------*/
+body {
+ padding: 0;
+ margin-top:0;
+ padding-top: 180px;
+ margin-left: 30px;
+ margin-right: 55px;
+ background-color: #F2F2F2;
+}
+main {
+    padding: 10px;
+}
+p {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+}
+li {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    padding-top: 15px;
+}
+h1 {
+    font-family: "Bebas Neue", serif;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Bebas Neue", serif;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    padding-top: 10px;
+}
+h3 {
+    font-family: "Bebas Neue", serif;
+    font-size: 25px;
+    font-style: normal;
+}
+h4 {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0;
+    margin:0;
+}
+dd {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+}
+dt {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+#taco-container p {
+   padding: 10px;
+}
+#taco-container img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#ingredients-container {
+    padding-left: 0;
+    margin-left: 0;
+}
+#ingredients-container li {
+    list-style-type: square;
+    padding-left: 0;
+}
+menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    color: #EB5428;
+}
+menu li {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+menu a {
+    text-decoration: none;
+    color: #EB5428;
+}
+menu a:hover {
+    color: #ffffff;
+    background-color: #EB5428;
+}
+#details-container dt, dd {
+    display: inline;
+}
+.rating-section > dl {
+    visibility: hidden;
+    max-height: 0;
+}
+aside {
+    background-color: #7ABFBF;
+}
+aside a {
+    padding-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+
+}
+aside p {
+    padding: 0;
+    margin-bottom:5px;
+    padding-top: 0;
+}
+.aside-container {
+    display: flex;
+    align-items:flex-start;
+    padding-left: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 180px;
+}
+.aside-description {
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+}
+aside img {
+    width: 120px;
+}
+aside h3 {
+    padding: 0;
+    margin: 0;
+}
+aside dl {
+    padding-bottom: 0;
+    margin-bottom:0;
+}
+nav {
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;
+    z-index:5;
+    
+}
+nav ul {
+    grid-area: hamberger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+nav li img {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none; 
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+nav span {
+    display: block;
+    position: relative;
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    font-style: normal;
+ }
+nav label svg {
+    display: block;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 550px;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+nav a {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    font-style: normal;
+}
+#logo {
+}
+#social {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right:20px;
+}
+#social li {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+}
+#social li:hover span {
+    color: #7ABFBF;
+    cursor: pointer;
+}
+footer {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    font-style: normal;
+    align-items: center;
+    background-color: white;
+}
+
+footer span {
+    text-decoration: none;
+    color: #EB5428;
+}
+footer small {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    font-style: normal;
+}
+#footer-copyright {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#footer-copyright > img {
+    width: 180px;
+}
+#social-hidden {
+    max-height:0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/* ---------------- ROOT VARIABLES ------------------*/
+:root {
+    background-color: rgba(122, 191, 191, .5);
+    margin: 0 auto;
+}
+/* --------------GLOBAL STYLES (mobile first/small) -----------*/
+
+/*--------- MEDIA QUERY (medium) ---------------*/
+
+/*------ MEDIA QUERY (large) ----------------*/
+
+
+/*----- CSS TIPS & TRICKS ---*/
+/* 
+Color Palette:
+black: #0D0D0D
+light grey: #F2F2F2
+dark teal: #7ABFBF
+light teal: rgba(122, 191, 191, .5)
+red: #EB5428
+
+Typography:
+see tips & hints google doc!
+
+Responsive:
+Delivering one image for all the breakpoints and using % to size. 
+
+Front-End ONLY:
+any content that requires it to function (sign in, form, star ratings), we’ll only to the front-end part.
+
+MEGA hints:
+- see tips & hints google doc for <menu> code
+- no floats in doc
+- <div> IS used a few times to group things - for style reasons only
+- about 500 lines of CSS code 
+*/
